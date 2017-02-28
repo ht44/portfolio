@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainHeader {
+  text-align: center;
+  color: blue;
+}
+
+.mainNav {
+  text-align: center;
+}
