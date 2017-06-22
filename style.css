@@ -8,15 +8,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  background-image: url("./images/Trees_1920x1234.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-
-
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.85);
@@ -32,7 +23,7 @@ a {
 .mainNav {
   font-size: 65px;
   color: white;
-  margin-top: 24vh;
+  margin-top: 225px;
   border-top: 1px outset rgba(0, 0, 0, 0.5);
   border-bottom: 1px outset rgba(0, 0, 0, 0.5);
   min-width: 680px;
@@ -41,6 +32,7 @@ a {
 .mainNav iframe {
   float: right;
   margin-top: 23px;
+  margin-right: 4px;
 }
 
 .mainNav li {
@@ -49,7 +41,7 @@ a {
 }
 
 .mainNav li:hover {
-  background-color: rgba(46, 255, 0, 0.5);
+  background-color: rgba(255, 0, 80, 0.5);
   /*background-color: rgba(255, 0, 140, 0.5);*/
 }
 
@@ -66,7 +58,6 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url('./images/Trees_1920x1234.png') no-repeat;
     background-size: cover;
 }
 
@@ -75,4 +66,19 @@ video#bgvid {
   border-radius: 100%;
   margin: 5px;
   float: right;
+}
+
+#about {
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 1em;
+  font-size: 50px;
+  color: white;
+}
+
+#bio {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+  text-align: justify;
 }
