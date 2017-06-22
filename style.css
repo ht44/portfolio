@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +9,13 @@
 }
 
 body {
-  background-image: url("http://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1920x1234.png");
+  background-image: url("./images/Trees_1920x1234.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+
 
 a {
   text-decoration: none;
@@ -18,29 +23,56 @@ a {
 }
 
 .mainHeader {
-  /*text-align: center;*/
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .mainNav {
-  /*display: flex;*/
-  /*justify-content: center;
-  flex-wrap: wrap;*/
   font-size: 65px;
   color: white;
-  /*text-align: center;*/
-  margin-top: 20vh;
+  margin-top: 24vh;
   border-top: 1px outset rgba(0, 0, 0, 0.5);
   border-bottom: 1px outset rgba(0, 0, 0, 0.5);
+  min-width: 680px;
+}
+
+.mainNav iframe {
+  float: right;
+  margin-top: 23px;
 }
 
 .mainNav li {
-  /*display: inline;*/
-  /*border: 1px solid black;*/
   background-color: rgba(0, 0, 0, 0.5);
   list-style: none;
-  /*text-align: center;*/
 }
 
 .mainNav li:hover {
   background-color: rgba(46, 255, 0, 0.5);
+  /*background-color: rgba(255, 0, 140, 0.5);*/
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('./images/Trees_1920x1234.png') no-repeat;
+    background-size: cover;
+}
+
+#headshot {
+  border: 1px outset grey;
+  border-radius: 100%;
+  margin: 5px;
+  float: right;
 }
