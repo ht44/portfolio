@@ -24,8 +24,8 @@ a {
   font-size: 65px;
   color: white;
   margin-top: 225px;
-  border-top: 1px outset rgba(0, 0, 0, 0.5);
-  border-bottom: 1px outset rgba(0, 0, 0, 0.5);
+  /*border-top: 1px outset rgba(0, 0, 0, 0.5);*/
+  /*border-bottom: 1px outset rgba(0, 0, 0, 0.5);*/
   min-width: 680px;
 }
 
