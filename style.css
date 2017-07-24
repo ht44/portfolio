@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Special Elite', cursive;*/
+  /*font-family: 'Aldrich', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Play', sans-serif;*/
+}
+
+body {
+  /*background-color: #000000;*/
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 51, 50);
+  /*background-image: url('images/cool.jpg');*/
+  /*background-size: cover;*/
+  /*background-position: left;*/
 }
 
 a {
@@ -14,77 +32,119 @@ a {
 }
 
 #top-left {
-  color: black;
+
+  color: #00ff3f;
+}
+
+.mainFlex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 350px;
+
+}
+
+.mainFlex a {
+  /*margin-left: 1em;*/
+  color: #00ff3f
 }
 
 .mainHeader {
+  margin-left: 1em;
   display: flex;
-  padding: 5px;
-  width: 100%;
+  flex-flow: column wrap;
+  /*flex: auto;*/
+  /*padding: 5px;*/
+  /*width: 100%;*/
   justify-content: space-between;
 }
 
-.mainNav {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 65px;
+.tech {
   color: white;
-  margin-top: 225px;
+  font-size: 12px;
+  white-space: nowrap;
+  float: right;
+  /*align-self: flex-end;*/
+}
+.mainNav {
+  margin-top: 0.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  display: flex;
+  flex-flow: row;
+  /*margin-top: 225px;*/
   /*border-top: 1px outset rgba(0, 0, 0, 0.5);*/
   /*border-bottom: 1px outset rgba(0, 0, 0, 0.5);*/
-  min-width: 680px;
+  min-width: 620px;
 }
 
-.mainNav iframe {
+.githubIcon {
+  height: 25px;
   float: right;
-  margin-top: 23px;
-  margin-right: 4px;
+  width: 70px;
 }
 
-.mainNav li {
-  padding-left: 5px;
-  /*background-color: rgba(0, 0, 0, 0.5);*/
-  list-style: none;
+/*.mainNav ul {
+  flex: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-left: 1em;
+}*/
+
+.mainNav div {
+  flex: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  /*margin-left: 1em;*/
 }
 
-.mainNav li:hover {
+.mainNav div > div {
+  flex: auto;
+  display: flex;
+  flex-flow: row ;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.mainNav div > div:hover {
   background-color: rgba(255, 0, 80, 0.5);
-  /*background-color: rgba(255, 0, 140, 0.5);*/
 }
 
-video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
+.githubDiv {
+  height: 100%;
+  /*margin-right: 1em;*/
+  /*background: green;*/
+  background: rgba(47, 61, 48, 0.5);
+  padding: 7px;
+}
+.githubDiv:hover {
+  background: rgba(0, 255, 161, 0.3);
+}
+
+
+.appLink {
+  color: #00ff3f;
+  height: 100%;
+}
+.appLink:hover {
+  color: white;
 }
 
 #headshot {
   border: 1px outset grey;
   border-radius: 100%;
   margin: 5px;
-  float: right;
+  float: left;
 }
 
-#about {
-  text-align: center;
-  margin-top: 160px;
-  margin-bottom: 1em;
-  font-size: 50px;
-  color: white;
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .tech { display: none; }  /* show it on small screens */
 }
 
-#bio {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
-  text-align: justify;
-}
+/*@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .tech { display: block; }   /* hide it elsewhere */
+}*/
