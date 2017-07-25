@@ -12,7 +12,7 @@
   /*font-family: 'Special Elite', cursive;*/
   /*font-family: 'Aldrich', sans-serif;*/
   /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   user-select: none;
 
   /*font-family: 'Play', sans-serif;*/
@@ -22,20 +22,22 @@ body {
   /*background-color: #000000;*/
   width: 100%;
   height: 100%;
-  background-color: rgb(16, 51, 50);
+  background-color: rgb(22, 22, 21);
+  /*background-color: rgb(16, 51, 50);*/
   /*background-image: url('images/cool.jpg');*/
   /*background-size: cover;*/
   /*background-position: left;*/
 }
 
 a {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.85);
 }
 
 #top-left {
-
-  color: #00ff3f;
+  color: rgb(0, 255, 161);
 }
 
 .mainFlex {
@@ -74,7 +76,8 @@ a {
 }
 .mainNav {
   margin-top: 0.5em;
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  background-color: rgba(15, 40, 31, 0.5);
   font-size: 25px;
   display: flex;
   flex-flow: row;
@@ -103,19 +106,21 @@ a {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
+  align-self: stretch;
   /*margin-left: 1em;*/
 }
 
-.mainNav div > div {
+.projects > div {
   flex: auto;
   display: flex;
-  flex-flow: row ;
+  flex-flow: row;
   justify-content: space-between;
+  align-items: center;
   margin-left: 1em;
 }
 
-.mainNav div > div:hover {
-  background-color: rgba(255, 0, 80, 0.5);
+.projects > div:hover {
+  background-color: rgba(255, 0, 80, 0.3);
 }
 
 .githubDiv {
@@ -125,14 +130,14 @@ a {
   background: rgba(47, 61, 48, 0.5);
   padding: 7px;
 }
+
 .githubDiv:hover {
   background: rgba(0, 255, 161, 0.3);
 }
 
-
 .appLink {
-  color: #00ff3f;
-  height: 100%;
+  color: rgb(0, 255, 161);
+  /*border: 1px solid white;*/
 }
 .appLink:hover {
   color: white;
@@ -148,7 +153,3 @@ a {
 @media screen and (min-width: 0px) and (max-width: 1200px) {
   .tech { display: none; }  /* show it on small screens */
 }
-
-/*@media screen and (min-width: 401px) and (max-width: 1024px) {
-  .tech { display: block; }   /* hide it elsewhere */
-}*/
