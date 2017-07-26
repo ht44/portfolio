@@ -39,6 +39,9 @@ a {
 #top-left {
   color: rgb(0, 255, 161);
 }
+#top-left:hover {
+  color: white;
+}
 
 .mainFlex {
   width: 100vw;
@@ -53,6 +56,19 @@ a {
 .mainFlex a {
   /*margin-left: 1em;*/
   color: #00ff3f
+}
+
+.downloads {
+  margin-left: 0.5em;
+  cursor: default;
+}
+
+.downloads, .downloads a {
+  color: rgb(0, 255, 161);
+}
+
+.downloads a:hover {
+  color: white;
 }
 
 .mainHeader {
